@@ -23,4 +23,9 @@ func main() {
 		}
 	}
 	fmt.Printf("Stack is empty: %v\n", s.IsEmpty())
+
+	r := stack.NewReverseStack()
+	testString := "abcde"
+	result := r.ReverseString(testString)
+	fmt.Printf("Original: %s\nReversed: %s\n", testString, result)
 }
