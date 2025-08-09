@@ -16,4 +16,15 @@ func main() {
 	g.AddEdge("B", "C")
 	g.PrintGraph()
 	fmt.Println()
+
+	// 2. Hash table based graph implementation
+	h := graph.NewHGraph()
+
+	h.AddNode("A")
+	h.AddNode("B")
+	h.AddNode("C")
+	h.AddEdge("A", "B")
+	h.AddEdge("A", "C")
+	h.AddEdge("B", "C")
+	h.PrintGraph()
 }
