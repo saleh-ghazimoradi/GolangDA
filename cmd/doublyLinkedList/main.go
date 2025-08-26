@@ -1,6 +1,9 @@
 package main
 
-import "github.com/saleh-ghazimoradi/GolangDA/doublyLinkedList"
+import (
+	"fmt"
+	"github.com/saleh-ghazimoradi/GolangDA/doublyLinkedList"
+)
 
 func main() {
 	list := doublyLinkedList.DoublyLinkedList{}
@@ -8,6 +11,7 @@ func main() {
 	list.Insert(2)
 	list.Insert(3)
 	list.Insert(4)
+	fmt.Println(list.Search(3))
 	list.Display()
 	list.Delete(3)
 	list.Display()

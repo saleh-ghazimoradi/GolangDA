@@ -24,6 +24,17 @@ func (l *DoublyLinkedList) Insert(data int) {
 	l.tail = newNode
 }
 
+func (l *DoublyLinkedList) Search(data int) bool {
+	current := l.head
+	for current != nil {
+		if current.data == data {
+			return true
+		}
+		current = current.next
+	}
+	return false
+}
+
 func (l *DoublyLinkedList) Delete(data int) {
 	if l.head == nil {
 		return
