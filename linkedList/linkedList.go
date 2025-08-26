@@ -43,6 +43,17 @@ func (l *LinkedList) Delete(data int) {
 	}
 }
 
+func (l *LinkedList) Search(data int) bool {
+	current := l.head
+	for current != nil {
+		if current.data == data {
+			return true
+		}
+		current = current.next
+	}
+	return false
+}
+
 func (l *LinkedList) Display() {
 	current := l.head
 	if current == nil {
